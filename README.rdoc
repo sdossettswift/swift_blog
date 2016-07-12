@@ -1,28 +1,12 @@
-== README
+Create a Blogging Rails Application.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    Your Post should have a title, body
+    You should have a proper db/seeds.rb that populated your title and posts when you run rake db:seed
+    When you go to http://localhost:3000 it should list all posts (title and body)
+    You should click on the title and go to http://localhost:3000/posts/:id and display the title and body
+    If I go to /posts/new I should see a form to write a new post
+    It should require content for title, body
+    I should be able to click on a post, and then click an edit button
+    When I edit, it should populate the form with the post, and allow me to edit and update
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Watch this blog post by DHH discussing creating a Blog in 15 minutes. It's widely regarded as one of THE reasons Rails took off in popularity.
