@@ -1,0 +1,24 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Alice|Open+Sans+Condensed:300';
+
+h1{
+  font-family: 'Alice', serif;
+  text-align: center;
+  font-size: 60px;
+}
+h2{
+  font-family: 'Alice', serif;
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+
+
+}
+h4{
+  font-family: 'Alice', serif;
+  text-align: center;
+  font-size: 12px;
+}

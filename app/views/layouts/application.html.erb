@@ -7,8 +7,30 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="container">
+    <header>
+    <h1> <%= link_to 'Houston Chatter', root_path %></h1>
+    <h4><%= link_to 'Add More Chatter', new_post_path %></h4>
+    </header>
+<div class="container">
+  <% if notice %>
+    <div class="alert alert-info" role="alert">
+      <%= notice %>
+    </div>
+  <% end %>
 
-<%= yield %>
+  <% if alert %>
+    <div class="alert alert-danger" role="alert">
+      <%= alert %>
+    </div>
+  <% end %>
+</div>
+
+
+<div class="container">
+  <%= yield %>
+</div>
+
 
 </body>
 </html>
