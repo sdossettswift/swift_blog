@@ -20,7 +20,22 @@ class PostsController < ApplicationController
    end
 end
 
-  def delete
+def edit
+  @post = Post.find_by id: params[:id]
+end
+
+def update
+  @post = Post.find_by id: params[:id]
+  @post.title = params[:post][:title]
+  @post.body = params[:post][:body]
+  if @post.save
+   redirect_to root_path, notice: "Post Updated!"
+ else
+   render :new
+ end
+end
+
+  def destroy
     @post = Post.find_by id: params[:id]
     @post.destroy
      redirect_to root_path, notice: "Post Destroyed!"
